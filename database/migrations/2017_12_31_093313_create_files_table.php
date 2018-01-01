@@ -17,9 +17,11 @@ class CreateFilesTable extends Migration
 
             $table->string('name_raw');
             $table->string('name_enc');
+            $table->string('type');
             $table->integer('dept');
             $table->string('dir');
-
+            $table->tinyInteger('encrypted')->default(0);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

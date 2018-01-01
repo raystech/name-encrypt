@@ -11,7 +11,7 @@
         	<div>
         		<ul>
         		@foreach($files as $file)
-        			<li><a href="{{ url('dir/?o='.$walk.'\\'.$file) }}">{{ $file }}</a></li>
+        			<li><a href="{{ url('dir/walk/?o='.$walk.'\\'.$file) }}">{{ $file }}</a></li>
         		@endforeach
         		</ul>
         	</div>

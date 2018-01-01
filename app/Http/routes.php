@@ -15,7 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('dir/walk', 'DirController@walk')->name('walk');
+Route::get('dir/encrypt', 'DirController@encrypt')->name('encrypt');
 Route::resources([
     'dir' => 'DirController',
     'posts' => 'PostController'
 ]);
+
